@@ -1,0 +1,3 @@
+[submodule "submodules/submodules/mxgraph"]
+	path = submodules/submodules/mxgraph
+	url = https://github.com/jgraph/mxgraph.git
