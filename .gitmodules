@@ -1,6 +1,3 @@
 [submodule "submodules/mxgraph"]
 	path = submodules/mxgraph
 	url = https://github.com/jgraph/mxgraph.git
-[submodule "submodules/nodejs"]
-	path = submodules/nodejs
-	url = https://github.com/nodejs/node.git
