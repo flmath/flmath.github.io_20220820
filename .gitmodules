@@ -4,3 +4,6 @@
 [submodule "submodules/nodejs"]
 	path = submodules/nodejs
 	url = https://github.com/nodejs/node.git
+[submodule "submodules/angular-cli"]
+	path = submodules/angular-cli
+	url = https://github.com/angular/angular-cli.git
