@@ -1,0 +1,88 @@
+
+body {
+  position: relative;
+}
+
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 span {
+
+}
+
+.col-md-9::after {
+    content: "";
+    /* The image used */
+    background-image: url('crop.png'); 
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 65%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+section {
+  padding-top: 40px 0;
+  padding-bottom: 220px;
+ 
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.nav {
+ 
+}
+
+.nav a {
+    color: #337ab7;
+}
+
+.nav li a:hover {
+    color: #000;
+    background-color: #3498db;
+}
+.nav li a:focus {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.nav .active a{
+    color: #fff;
+    background-color: #337ab7;
+}
+
+
+.affix-top {
+  position: relative;
+}
+
+.affix {
+  top: 20px;
+}
+
+.affix, 
+.affix-bottom {
+    width: 213px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+@media (min-width:1200px) {
+  .affix, 
+  .affix-bottom {
+    width: 263px;
+  }
+}
