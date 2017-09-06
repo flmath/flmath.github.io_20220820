@@ -3,26 +3,17 @@ body {
   position: relative;
 }
 
-
-h1, h2 {
-  font-weight: 700;
-}
-
-h3 span {
-
-}
-
-.col-md-9::after {
+body::after {
     content: "";
-    /* The image used */
-    background-image: url('crop.png'); 
-    opacity: 0.25;
-    filter: alpha(opacity=25);
+    background-image: url('mebg2.png'); 
+    opacity: 0.20;
+    filter: alpha(opacity=20);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 65%;
+  /*    background-position: 65%; */
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+
     top: 0;
     left: 0;
     bottom: 0;
@@ -30,38 +21,65 @@ h3 span {
     position: absolute;
     z-index: -1; 
 }
+.background-tint {
+  background-color: rgba(228,235,244,.8);
+  background-blend-mode: multiply;
+}
+
+h1, h2 {
+  font-weight: 700; 	
+  color: blacks;
+  background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
+
+}
+hr {
+    border-color: rgba(83,192,240,1);
+}
+p {
+    text-indent: 50px;
+}
+h3 span {
+
+}
+
 section {
   padding-top: 40px 0;
-  padding-bottom: 220px;
+  color: #041e2d;
+  font-size: 17px;
+  /* padding-bottom: 120px; */
  
 }
 
 section:last-child {
   border-bottom: none;
+  padding-bottom: 80%;
 }
 
 .nav {
- 
+    font-size: 20px;
 }
 
 .nav a {
-    color: #337ab7;
+    color: white;
+    background-color: rgba(83,192,240,0.8);
 }
 
 .nav li a:hover {
     color: #000;
-    background-color: #3498db;
+    background-color: rgba(185,229,243,1);
 }
 .nav li a:focus {
     color: #fff;
-    background-color: #337ab7;
+    background-color: rgb(80,89,97);
 }
 
 .nav .active a{
     color: #fff;
-    background-color: #337ab7;
+    background-color: #d28f1b;
 }
-
 
 .affix-top {
   position: relative;
@@ -85,4 +103,24 @@ section:last-child {
   .affix-bottom {
     width: 263px;
   }
+}
+
+#personal-info > * > .personal_container_tint .container {
+    font-size: 20px;
+    color: #111111;  
+}
+
+#personal-info > * > .personal_container_tint .container .row a{
+    color: #111111;
+    font-size: 20px;  
+}
+.personal_container_tint {
+  background-color: rgba(228,235,244,.6);
+  background-blend-mode: add;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 2%;
+  padding-left: 2%;
+  text-align: justify;
+  text-justify: auto;
 }

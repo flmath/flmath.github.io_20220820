@@ -1,0 +1,19 @@
+A color palette was inspired by the 44 Blue accent with the 50 oriental Opulence:
+http://blog.visme.co/color-combinations/
+
+Other interesting colors:
+http://www.color-hex.com/color/b9e5f3
+http://www.color-hex.com/color/8ed3f4
+http://www.color-hex.com/color/328daa
+http://www.color-hex.com/color/e4ebf4
+http://www.color-hex.com/color/8a8683
+http://www.color-hex.com/color/5a4d4c
+http://www.color-hex.com/color/51a2d9
+http://www.color-hex.com/color/505961
+
+Bootstrap example used as a base:
+
+https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline
+
+https://codepen.io/anon/pen/NvJjVG

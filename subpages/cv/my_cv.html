@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,36 +10,39 @@
     <!-- Bootstrap core CSS -->
     <link href="../../lib/bootstrap_priv/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="includes/main.css" rel="stylesheet">
+    <link href="includes/leafs.css" rel="stylesheet">
     <script src="../../lib/w3_priv/w3.js"></script>   
     <script src="includes/sidebar.js"></script> 
   </head>
 
-<body data-spy="scroll" data-target=".scrollspy">
+<body data-spy="scroll" data-target=".scrollspy" class="background-tint">
   <div class="container">
     <div class="row">
-
-      <div class="col-md-3 scrollspy">
+      <nav class="col-md-3 scrollspy">
         <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
           <li><a href="#personal-info">Personal Info</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>  
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#interest">Intrests</a></li>
+	  <li><a href="#education">Education</a></li>
+	  <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#interest">Interests</a></li>
         </ul>
-      </div>
-
+      </nav>      
       <div class="col-md-9">
 	<section id="personal-info"> 
 	  <div w3-include-html="includes/contact.html"></div>  
 	</section> 
         <section id="skills">
 	  <div w3-include-html="includes/skills.html"></div> 
-        </section>
-        <section id="education">
-         <div w3-include-html="includes/education.html"></div> 
-        </section>
+        </section>   
         <section id="experience">
 	  <div w3-include-html="includes/experience.html"></div> 
+        </section>
+	<section id="education">
+         <div w3-include-html="includes/education.html"></div> 
+        </section>
+	<section id="certificates">
+         <div w3-include-html="includes/certificates.html"></div> 
         </section>
         <section id="interest">
           <div w3-include-html="includes/interests.html"></div> 
@@ -52,7 +55,6 @@
 <script>w3.includeHTML();</script> 
 
   
-<!-- <script>w3.includeHTML();</script> -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -64,3 +66,5 @@
       <!--   <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
 
 </body>
+
+</html>
