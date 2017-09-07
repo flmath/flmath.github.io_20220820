@@ -9,49 +9,37 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../lib/bootstrap_priv/css/bootstrap.min.css" rel="stylesheet"> 
-    <link href="includes/main.css" rel="stylesheet">
-    <link href="includes/leafs.css" rel="stylesheet">
-    <script src="../../lib/w3_priv/w3.js"></script>       
+    <link href="includes/to_print.css" rel="stylesheet">
+    <script src="../../lib/w3_priv/w3.js"></script>   
   </head>
 
-<body data-spy="scroll" data-target=".scrollspy" class="background-tint">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 scrollspy">
-        <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
-          <li><a href="#personal-info">Personal Info</a></li>
-          <li><a href="#skills">Skills</a></li>  
-          <li><a href="#experience">Experience</a></li>
-	  <li><a href="#education">Education</a></li>
-	  <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#interest">Interests</a></li>
-        </ul>
-      </div>      
-      <div class="col-md-9 text_body">
+<body>
+  <div class="container"> 
 	<section id="personal-info"> 
-	  <div w3-include-html="includes/contact.html"></div>  
+	  <div w3-include-html="includes/print/contact.html"></div>  
 	</section> 
         <section id="skills">
-	  <div w3-include-html="includes/skills.html"></div> 
+	  <div w3-include-html="includes/print/skills.html"></div> 
         </section>   
         <section id="experience">
-	  <div w3-include-html="includes/experience.html"></div> 
+	  <div w3-include-html="includes/print/experience.html"></div> 
         </section>
 	<section id="education">
-         <div w3-include-html="includes/education.html"></div> 
+         <div w3-include-html="includes/print/education.html"></div> 
         </section>
 	<section id="certificates">
-         <div w3-include-html="includes/certificates.html"></div> 
+         <div w3-include-html="includes/print/certificates.html"></div> 
         </section>
         <section id="interest">
-          <div w3-include-html="includes/interests.html"></div> 
+	  <div w3-include-html="includes/print/interests.html">
+            Refer to https://flmath.github.io/subpages/cv/my_cv.html 
+	  </div> 
         </section>   
-      </div>
-
-    </div><!--end of .row-->
   </div><!--end of .container-->
+    <script>w3.includeHTML();</script> 
 
-<script>w3.includeHTML();</script>  
+
+  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -61,7 +49,7 @@
        <script src="../../lib/bootstrap_priv/js/bootstrap.min.js"></script> 
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <!--   <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-      <script src="includes/sidebar.js"></script> 
+
 </body>
 
 </html>

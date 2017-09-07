@@ -1,0 +1,47 @@
+<h2><span class="fa fa-edit"></span>Certificates</h2>
+<hr>
+<div class="personal_container_tint">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">2017:</div>
+      <div class="col-md-11">
+	<a href="includes/certs/machinelearning.pdf">
+	  Coursera online certificate: Machine Learning
+      </a></div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">2014:</div>
+      
+      <div class="col-md-11">
+	<a href="includes/certs/modelthinking.pdf">
+	  Coursera online certificate: Model Thinking
+	</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">2013:</div>
+      <div class="col-md-11">  
+	<a href="includes/certs/comnet.pdf">
+	  Coursera online certificate: Computer Networks
+	</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">2013:</div>
+      <div class="col-md-11">
+	<a href="includes/certs/ustats.pdf">
+	  Udacity online certificate: Statistic
+	</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">2012:</div>	
+      <div class="col-md-11">
+	<a href="includes/certs/erlang.pdf">
+	  Erlang Solution: Foundation Certificate
+	</a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>

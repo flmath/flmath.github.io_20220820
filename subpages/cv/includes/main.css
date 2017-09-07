@@ -39,7 +39,7 @@ hr {
     border-color: rgba(83,192,240,1);
 }
 p {
-    text-indent: 50px;
+    text-indent: 30px;
 }
 h3 span {
 
@@ -49,13 +49,13 @@ section {
   padding-top: 40px 0;
   color: #041e2d;
   font-size: 17px;
-  /* padding-bottom: 120px; */
+  /* padding-bottom: 120px;  */
  
 }
 
 section:last-child {
   border-bottom: none;
-  padding-bottom: 80%;
+  padding-bottom: 450px; 
 }
 
 .nav {
@@ -78,7 +78,7 @@ section:last-child {
 
 .nav .active a{
     color: #fff;
-    background-color: #d28f1b;
+    background-color: rgb(212,175,55);
 }
 
 .affix-top {
