@@ -1,49 +1,69 @@
-//     var current_url = window.location.href;
-//     var tmp_id = current_url.substring(current_url.indexOf("#"));
+    var current_url = window.location.href;
+    var tmp_id = current_url.substring(current_url.indexOf("#"));
      
-//      if (localStorage.current_tag_pos) {
-//      //	alert(localStorage.current_tag);
-// 	 window.location.href = localStorage.current_tag;
-//      } else {
-// 	 window.location.href = "";
-//      }
+     if (localStorage.current_tag_pos) {
+     //	alert(localStorage.current_tag);
+	 window.location.href = localStorage.current_tag;
+     } else {
+	 window.location.href = "";
+     }
 
-//  //   console.log( localStorage.getItem("current_tag_pos"))
-//    // window.scrollTo(0, localStorage.getItem("current_tag_pos"));
-// $(document).ready(function() {
+ //   console.log( localStorage.getItem("current_tag_pos"))
+   // window.scrollTo(0, localStorage.getItem("current_tag_pos"));
+$(document).ready(function() {
 
-//    // window.scrollTo(0, 0);  
-//     console.log(localStorage.current_tag) 
-//     window.location.href = localStorage.current_tag;
+   // window.scrollTo(0, 0);  
+    console.log(localStorage.current_tag) 
+    window.location.href = localStorage.current_tag;
 
-// });
-   // var current_url = window.location.href;
-   // var tmp_id = current_url.substring(current_url.indexOf("#"));
-   // var active_section = $('.main_body '+tmp_id);
-    //console.log( active_section);
-//.getElementById(tmp_id);
+});
+   var current_url = window.location.href;
+   var tmp_id = current_url.substring(current_url.indexOf("#"));
+   var active_section = $('.main_body '+tmp_id);
+    console.log( active_section);
+.getElementById(tmp_id);
 
-//     var log = $(".nav li.active > a")
-//     var current_url = window.location.href;
-//     var tmp_id = current_url.substring(current_url.indexOf("#"));
-//     //var top = document.getElementById(tmp_id).offsetTop;
-//     //    window.scrollTo(0, top);    
-//     localStorage.setItem("current_tag", tmp_id);
-//     console.log(localStorage.current_tag)
-//     // var current_url = window.location.href;
-//     // tmp_hash = current_url.substring(current_url.indexOf("#"));
-//     // window.location.href = tmp_hash;
-   //active_elem.removeClass("active"); 
-   // console.log(localStorage.current_tag) 
-   // window.location.href = localStorage.current_tag;
+    var log = $(".nav li.active > a")
+    var current_url = window.location.href;
+    var tmp_id = current_url.substring(current_url.indexOf("#"));
+    //var top = document.getElementById(tmp_id).offsetTop;
+    //    window.scrollTo(0, top);    
+    localStorage.setItem("current_tag", tmp_id);
+    console.log(localStorage.current_tag)
+    // var current_url = window.location.href;
+    // tmp_hash = current_url.substring(current_url.indexOf("#"));
+    // window.location.href = tmp_hash;
+   active_elem.removeClass("active"); 
+   console.log(localStorage.current_tag) 
+   window.location.href = localStorage.current_tag;
 
 
-// $(window).on("load",function() {
-//     var active_elem = $(".nav li.active");
-//      window.scrollTo(0, 0);
-//     //active_elem.removeClass("active"); 
-//     console.log(active_elem);
-//     // $(".tab").addClass("active"); // instead of this do the below 
-//     //$(this).addClass("active");   
+$(window).on("load",function() {
+    var active_elem = $(".nav li.active");
+     window.scrollTo(0, 0);
+    //active_elem.removeClass("active"); 
+    console.log(active_elem);
+    // $(".tab").addClass("active"); // instead of this do the below 
+    //$(this).addClass("active");   
 
-// });
+});
+    var active_section = $(".test_body " + tmp_id);
+    console.log(active_section);
+    var current_tag_offset = active_section.position().top;  
+    sessionStorage.setItem('current_tag_offset',current_tag_offset);
+    console.log(current_tag_offset);
+    sessionStorage.setItem('current_tag',tmp_id);
+
+    var active_elem = $(".nav li.active a"); 
+    var current_url = active_elem.attr('href');
+    var tmp_id =  current_url.substring(current_url.indexOf("#"))
+
+$(window).on("load",function() {
+    //console.log(sessionStorage.getItem('current_tag'));
+    window.scrollTo(0, 0);
+    var current_url = window.location.href;
+    var tmp_id = current_url.substring(0,current_url.indexOf("#"));
+       console.log(tmp_id);  
+    window.location.href=tmp_id;
+
+});

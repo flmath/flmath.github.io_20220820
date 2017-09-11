@@ -33,8 +33,17 @@ h1, h2 {
   background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
    background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
-
 }
+
+h3 {
+  	
+  color: blacks;
+  background: -webkit-linear-gradient(right, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(185,229,244,0.7), rgba(83,192,240,0.3)); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to left, rgba(83,192,240,0.7),rgba(185,229,244,0.3)); /*syntax (must be last) */
+}
+
 hr {
     border-color: rgba(83,192,240,1);
 }
