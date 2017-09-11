@@ -120,7 +120,7 @@ section:last-child {
 }
 
 #personal-info > * > .personal_container_tint .container .row a{
-    color: #111111;
+    /* color: #111111; */
     font-size: 20px;  
 }
 .personal_container_tint {
