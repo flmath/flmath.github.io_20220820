@@ -67,3 +67,28 @@ $(window).on("load",function() {
     window.location.href=tmp_id;
 
 });
+
+   var log = $(".nav li.active > a")
+    var current_url = window.location.href;
+    var tmp_id = current_url.substring(current_url.indexOf("#")+1);
+    var top = document.getElementById(tmp_id).offsetTop;
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+     console.log(top);
+
+   log2 = $(".nav li.active > a")
+    var active_elem = $(".nav li.active");
+    top = document.getElementById(tmp_id).offsetTop;
+    scroll = $(window).scrollTop();
+    console.log(active_elem);
+  
+$('li a').click(function(e) {
+        e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    // Do something
+});
