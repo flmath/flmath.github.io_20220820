@@ -92,3 +92,39 @@ $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     // Do something
 });
+    // var tm = sections.forEach(print_offset);
+    // for(var section in sections)
+    // {
+    // 	if (!sections.hasOwnProperty(section)) continue;
+    // 	if (section=="length") continue;
+    // 	if (section=="prevObject") continue;
+    // 	console.log(sections[section].offsetTop);
+    // }
+	//	$(".nav .active a").css("background-color","rgb(212,175,55)");
+
+
+	//  var nav_active_link = $(".nav li.active a"); 
+	//  var nav_active_href = nav_active_link.attr('href');
+	//  window.location.href = nav_active_href;
+	//  var nav_tag = nav_active_href.substring(nav_active_href.indexOf("#"));
+	//  console.log(nav_tag)
+	//  var current_url = window.location.href;
+	//  var current_tag =  current_url.substring(current_url.indexOf("#")+1);
+	//  console.log(current_tag)
+
+	//  var el2 = $(".nav li.active");
+
+	
+	//  el2.removeClass('active');
+	// // $(tmp_id).addClass('active');
+
+
+	//  var active_elem = $(".nav li.active a"); 
+	//  var current_url2 = active_elem.attr('href');
+	//  var tmp_id2 = current_url2.substring(current_url2.indexOf("#"));
+
+	//console.log("active nav " + tmp_id2);
+
+	//$(".nav .active a").css("background-color","rgba(83,192,240,0.8)");	    
+	// window.scrollTo(0, 0);
+	var sections = $(".text_body section");
