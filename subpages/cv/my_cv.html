@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My CV">
+    <meta name="description" content="The CV of Mathias Green">
     <meta name="author" content="flmath">
-    <title>Full Lethal Mathematic</title>
+    <title>Mathias Green</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../lib/bootstrap_priv/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="includes/main.css" rel="stylesheet">
     <link href="includes/leafs.css" rel="stylesheet">
     <script src="../../lib/w3_priv/w3.js"></script>       
@@ -53,14 +53,30 @@
 
   <script>w3.includeHTML();</script>  
   <!-- Bootstrap core JavaScript
-       ================================================== -->
+  ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="../../lib/jquery_priv/jquery-3.2.1.min.js"></script> 
-  <script src="../../lib/popperjs_priv/popper.min.js"></script> 
-  <script src="../../lib/bootstrap_priv/js/bootstrap.min.js"></script> 
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <!--   <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-  <script src="includes/sidebar.js"></script> 
+  <!-- Fallback CDN according to 
+  https://stackoverflow.com/questions/26192897/should-i-use-bootstrap-from-cdn-or-make-a-copy-on-my-server -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script> window.jQuery || document.write('<script src="../../lib/jquery_priv/jquery-3.2.1.min.js"><\/script>'); </script>
+    
+    <script src="../../lib/popperjs_priv/popper.min.js"></script> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>if(typeof($.fn.modal) === 'undefined')
+      {document.write('<script src="../../lib/bootstrap_priv/js/bootstrap.min.js"><\/script>')}</script> 
+       <div id="bootstrapCssTest" class="hidden"></div>
+      <script>
+	$(function() {
+	if ($('#bootstrapCssTest').is(':visible')) {
+        $("head").prepend('<link rel="stylesheet" href="../../lib/bootstrap_priv/css/bootstrap.min.css">');
+	}
+	});
+      </script>
+
+      <script src="includes/sidebar.js"></script> 
+
+
+
 </body>
 
 </html>
