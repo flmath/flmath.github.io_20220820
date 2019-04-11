@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118756062-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-118756062-1');
+	</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The CV of Mathias Green">
+    <meta name="author" content="flmath">
+    <title>Mathias Green</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="includes/main.css" rel="stylesheet">
+    <link href="includes/leafs.css" rel="stylesheet">
+    <script src="../../lib/w3_priv/w3.js"></script>       
+  </head>
+
+<body data-spy="scroll" data-target=".scrollspy" class="background-tint">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 scrollspy">
+        <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+          <li><a href="#personal-info">Personal Info</a></li>
+          <li><a href="#skills">Skills</a></li>  
+          <li><a href="#experience">Experience</a></li>
+	  <li><a href="#education">Education</a></li>
+	  <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#interest">Interests</a></li>
+        </ul>
+      </div>      
+      <div class="col-md-9 text_body">
+	<section id="personal-info"> 
+	  <div w3-include-html="includes/contact.html"></div>  
+	</section> 
+        <section id="skills">
+	  <div w3-include-html="includes/skills.html"></div> 
+        </section>   
+        <section id="experience">
+	  <div w3-include-html="includes/experience.html"></div> 
+        </section>
+	<section id="education">
+         <div w3-include-html="includes/education.html"></div> 
+        </section>
+	<section id="certificates">
+         <div w3-include-html="includes/certificates.html"></div> 
+        </section>
+        <section id="interest">
+          <div w3-include-html="includes/interests.html"></div> 
+        </section>   
+      </div>
+
+    </div><!--end of .row-->
+  </div><!--end of .container-->
+
+  <script>w3.includeHTML();</script>  
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- Fallback CDN according to 
+  https://stackoverflow.com/questions/26192897/should-i-use-bootstrap-from-cdn-or-make-a-copy-on-my-server -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script> window.jQuery || document.write('<script src="../../lib/jquery_priv/jquery-3.2.1.min.js"><\/script>'); </script>
+    
+    <script src="../../lib/popperjs_priv/popper.min.js"></script> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>if(typeof($.fn.modal) === 'undefined')
+      {document.write('<script src="../../lib/bootstrap_priv/js/bootstrap.min.js"><\/script>')}</script> 
+       <div id="bootstrapCssTest" class="hidden"></div>
+      <script>
+	$(function() {
+	if ($('#bootstrapCssTest').is(':visible')) {
+        $("head").prepend('<link rel="stylesheet" href="../../lib/bootstrap_priv/css/bootstrap.min.css">');
+	}
+	});
+      </script>
+
+      <script src="includes/sidebar.js"></script> 
+
+
+
+</body>
+
+</html>
